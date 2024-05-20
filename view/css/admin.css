@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+body {
+    background: rgb(196,205,203);
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.51);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    background: url(../assets/Logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    border: none;
+    width: 55px;
+    height: 55px;
+}
+
+.logout {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+    font-size: large;
+}
+
+.logout ul li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+
+.logout ul li:hover,
+a:hover {
+    color: #000;
+}
+
+h3 {
+    margin-block: 20px;
+    font-family: 'Inter';
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-block: 30px;
+    border-radius: 25px;
+    background: rgba(51,51,51, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+.first{
+    width: 100%;
+}
+.container1{
+    justify-self: flex-start;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap: 20px;
+}
+.container1 .field{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.container1 .field .form__label{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+.second{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap: 20px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap: 20px;
+}
+.container3 .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+}
+
+
+.form__input{
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: 100;
+    height: 35px;
+    transition: all .2s ease;
+}
+.form__input:hover{
+    box-shadow: 0 0 0 0 #fff inset, rgb(196,205,203) 0 0 0 2px;
+}
+.form__input:focus{
+    background: rgb(196,205,203);
+        outline: 0;
+        box-shadow: 0 0 0 0 #ffffff inset, rgb(196,205,203) 0 0 0 3px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+#cancelBTN{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid rgb(51,51,51);
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(51,51,51);
+    font-size:0.8em ;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+#cancelBTN:hover{
+    color: rgb(51,51,51);
+    background: rgb(191, 65, 65);
+}
+#addBTN{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid rgb(51,51,51);
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(51,51,51);
+    font-size: 0.8em;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+#addBTN:hover{
+    color: rgb(51,51,51);
+    background: rgb(80, 148, 82);
+}
+
+
+#blocks{
+    margin-left: 140px;
+    margin-block: 15px;
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(223,223,223, 0.5);
+    appearance: none;
+    width: 20%;
+    border-radius: 3px;
+    padding: 9px 12px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: 100;
+    height: 35px;
+    transition: all .2s ease;
+}
+#blocks:hover{
+    box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+}
+#blocks:focus{
+    background: #fff;
+        outline: 0;
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+/* Style for table */
+table {
+    margin: 0 auto;
+    padding-top: 5px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+/* Style for table header */
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style for table cells */
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:first-child{
+    background: rgb(51,51,51);
+    color: rgb(223,223,223);
+}
+/* Style for alternating rows */
+tr:nth-child(even) {
+    background-color: rgb(223,223,223);
+}
+tr:nth-child(odd):not(:first-child) {
+    background-color: rgb(233,233,233);
+  }
+  
+
+
+#editStudent {
+    width: 60px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid rgb(51,51,51);
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(51,51,51);
+    font-size: 0.8em;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+#editStudent:hover {
+    color: rgb(51,51,51);
+    background: rgb(98, 157, 216);
+}
+
+#deleteStudent {
+    width: 60px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid rgb(51,51,51);
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(51,51,51);
+    font-size: 0.8em;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+#deleteStudent:hover {
+    color: rgb(51,51,51);
+    background: rgb(191, 65, 65);
+}
+
+
+
+select {
+    text-align: center;
+}
