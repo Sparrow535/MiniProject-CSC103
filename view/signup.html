@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="signup" class="form">
+            <h1>Sign Up</h1>
+            <div class="form-field">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" autocomplete="off">
+                <small id="fname-error"></small>
+            </div>
+            <div class="form-field">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" autocomplete="off">
+                <small id="lname-error"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small id="email-error"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <small id="password-error"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                <small id="confirm-password-error"></small>
+            </div>
+
+            <p>Gender</p>
+            <div class="form-field gender-btn">
+                <input type="radio" name="gender" value="male" id="male" autocomplete="off"> 
+                <label for="male">MALE</label>
+                <input type="radio" name="gender" value="female" id="female" autocomplete="off">
+                <label for="female">FEMALE</label>
+                <small id="gender-error"></small>
+            </div>
+
+            <div class="form-field btn-container">
+                <button class="btn" type="submit" value="Sign Up">Sign Up</button>
+            </div>
+        </form>
+        <div class="switch">
+            <p>Already have an account? <a href="index.html"><b>Login</b></a></p>
+        </div>
+    </div>
+    <script src="script/signup.js"></script>
+</body>
+</html>

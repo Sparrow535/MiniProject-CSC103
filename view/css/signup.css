@@ -1,0 +1,174 @@
+body {
+    font-family: 'Inter';
+    background: #a8c9c1;
+    overflow: hidden;
+}
+
+.container {
+    width: 25%;
+    margin: 0 auto;
+    padding: 5px 50px 10px 50px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background: rgba(51, 51, 51, 0.31);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field.error input {
+    border-color: red;
+}
+
+.form-field.success input {
+    border-color: #4BB543;
+}
+
+.form-field small {
+    color: red
+}
+
+h1 {
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    background: none;
+    appearance: none;
+    border: 1px solid #beddcd;
+    border-radius: 5px;
+    padding: 9px 12px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: 100;
+    box-shadow: inset #abacaf 0 0 0 2px;
+    height: 20px;
+    transition: all .2s ease;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    box-shadow: 0 0 0 0 #fff inset, rgb(155, 200, 190) 0 0 0 2px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: #d7f1ef;
+    outline: 0;
+    box-shadow: 0 0 0 0 #ffffff inset, rgb(149, 207, 194) 0 0 0 3px;
+}
+
+.btn-container {
+    margin-block: 0px;
+    position: relative;
+    left: 78%;
+    top: -10px;
+    text-align: center;
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(51, 51, 51);
+    font-size: 0.8em;
+    text-align: center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.btn:hover {
+    color: rgb(51, 51, 51);
+    background: rgb(233,233,233);
+}
+
+.switch {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.switch p {
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+}
+
+.switch a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+.small {
+    color: red;
+    font-size: 12px;
+}
+
+.gender-btn {
+    background-color: rgb(51,51,51);
+    display: inline-block;
+    border: 2px solid rgb(51,51,51);
+}
+
+.gender-btn input[type=radio] {
+    opacity: 0;
+    display: none;
+    margin: 0;
+    outline: none;
+}
+
+.gender-btn input[type="radio"]:checked+label {
+    background-color: rgb(51,51,51);
+    color: white;
+    animation-name: radio-active;
+    animation-duration: 0.2s;
+}
+
+@keyframes radio-active {
+    from {
+        transform: scale(0.5, 0.5);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.gender-btn label {
+    padding: 0.8em;
+    cursor: pointer;
+    background: none;
+    display: inline-block;
+    outline: none;
+    letter-spacing: 0.1em;
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.1s;
+}

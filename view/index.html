@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login" class="form" onsubmit="return validateForm()">
+            <h1>Login</h1>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small id="email-error"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" autocomplete="off">
+                <small id="password-error"></small>
+            </div>
+
+            <div class="form-field btn-container">
+                <button class="btn" type="button" value="Submit" onclick="login()">Login</button>
+            </div>
+        </form>
+        <div class="switch">
+            <p>Don't have an account? <a href="signup.html"><b>Sign Up</b></a></p>
+        </div>
+    </div>
+    <script src="script/login.js"></script>
+</body>
+</html>
