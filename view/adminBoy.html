@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo-img"></div>
+            <div class="logout">
+                <ul>
+                    <li onclick="logout()"><a href="javascript:void(0);"><b>Log Out</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h3>Hostel Allocation Form For Boys</h3>
+    <div class="container">
+        <div class="first">
+            <div class="container1">
+                <div class="field">
+                    <label for="name" class="form__label">First Name</label>
+                    <input type="input" class="form__input" placeholder="Enter your first name" name="fname" id='fname' required />
+                </div>
+                <div class="field">
+                    <label for="name" class="form__label">Last Name</label>
+                    <input type="input" class="form__input" placeholder="Enter your last name" name="lname" id='lname' required />
+                </div>
+                <div class="field">
+                    <label for="name" class="form__label">Enrollment No</label>
+                    <input type="number" class="form__input" placeholder="Enter your enrollment no" name="enroll" id='enroll' required />
+                </div>
+                <div class="field">
+                    <label for="name" class="form__label">Contact No</label>
+                    <input type="number" class="form__input" placeholder="Enter your contact no" name="contact" id='contact' required />
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="container2">
+                <div class="selection">
+                    <div class="col-1">
+                        <label for="block">Choose Block:</label>
+                        <select id="block" onchange="updateSecondSelect()" class="form__input">
+                            <option value="0">Select Block</option>
+                            <option value="K">K-block</option>
+                            <option value="L">L-block</option>
+                            <option value="M">M-block</option>
+                            <option value="N">N-block</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection">
+                    <div class="col-1">
+                        <label for="firstSelect">Choose Floor:</label>
+                        <select id="floor" onchange="updateSecondSelect()" class="form__input">
+                            <option value="0">Select Floor</option>
+                            <option value="Fo">Attic</option>
+                            <option value="T">3rd floor</option>
+                            <option value="S">2nd floor</option>
+                            <option value="F">1st floor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection">
+                    <div class="col-1">
+                        <label for="secondSelect">Choose Room:</label>
+                        <select id="secondSelect" class="form__input">
+                            <option value="0">Select Room</option>
+                            <!-- Options will be dynamically added based on the selection of the first select -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="button">
+                    <div class="cancel">
+                        <button onclick="resetForm()" id="cancelBTN">Cancel</button>
+                    </div>
+                    <div class="add">
+                        <button id="addBTN" onclick="addStudent()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blockselection">
+        <select name="blocks" id="blocks" onchange="filterStudentsByBlock()">
+            <option value="0">All Students</option>
+            <option value="K">Block-K</option>
+            <option value="L">Block-L</option>
+            <option value="M">Block-M</option>
+            <option value="N">Block-N</option>
+        </select>
+    </div>
+    <div class="details">
+        <table id="myTable">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Enrollment Number</th>
+                <th>Contact Number</th>
+                <th>Room</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <script src="script/adminBoy.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/auth.js"></script>
+</body>
+
+</html>
