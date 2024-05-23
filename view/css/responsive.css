@@ -1,0 +1,47 @@
+/* responsive */
+/* phone */
+@media (max-width:480px) {
+  nav{
+    width: 80%;
+  }
+  .logo-img{
+    margin-top: 15px;
+  }
+  .logout{
+    font-size: 1em;
+    padding-right: 20px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  .container{
+    width: 80%;
+    flex-direction: column;
+  }
+  #blocks{
+    width: 40%;
+    position: relative;
+    margin-left: 10%;
+  }
+  table{
+    width: 100%;
+    font-size: 0.6em;
+  }
+  #editStudent{
+    width: 40px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 540px) {
+  h3{
+    font-size: 30px;
+  }
+  .container{
+    width: 70%;
+  }
+  table{
+    width: 80%;
+    font-size: 0.8em;
+  }
+}

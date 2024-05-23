@@ -36,7 +36,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 
 	getErr := admin.GetAdmin()
 	if getErr != nil {
-		httpresp.RespondWithError(w, http.StatusUnauthorized, getErr.Error())
+		httpresp.RespondWithError(w, http.StatusUnauthorized, "invalid email or password")
 		return
 	}
 
@@ -93,5 +93,4 @@ func VerifyCookie(w http.ResponseWriter, r *http.Request) bool {
 		return false
 	}
 	return true
-
 }
